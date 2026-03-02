@@ -1,11 +1,18 @@
 import React from 'react';
-import Bag from './Bag';
-
-function Pears(props) {
-    <Bag children={<Pears friend="Peter" />} />
-    return (
-        <h2>I don't like pears, but my friend, {props.friend}, does!</h2>
-    )
+function SideBar() {
+    const sidebarStyle = {
+        width: '200px',
+        backgroundColor: '#f0f0f0',
+        padding: '10px',
+        boxSizing: 'border-box',
+        marginLeft: '20px',
+    };
+  return (
+    <aside className="SideBar" style={sidebarStyle}>
+      <h2>SideBar</h2>
+      <p>This is the sidebar content.</p>
+    </aside>
+  );
 }
 
-export default Pears;
+export default SideBar;

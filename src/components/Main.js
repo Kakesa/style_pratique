@@ -1,16 +1,14 @@
-function Promo(props) {
+function Main() {
+    const mainStyle = {
+        padding: '20px',
+        backgroundColor: '#f4f4f4',
+        flex: 1,
+    };
     return (
-        <div className="promo-section">
-            <div>
-                <div>
-                  <h1>{props.heading}</h1>
-                </div>
-                <div>
-                   <h2>{props.promoSubHeading}</h2>
-                </div>
-            </div>
-        </div>
+        <main className="main-section" style={mainStyle}>
+            <h1>Main Content</h1>
+        </main> 
     );
 };
 
-export default Promo;
+export default Main;
