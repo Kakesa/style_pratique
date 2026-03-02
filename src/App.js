@@ -1,20 +1,19 @@
-import './App.css';
-import Promo from './components/Promo';
+import './index.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import SideBar from './components/SideBar';
 
-function Header(){
-  return <h1>Hello World</h1>;
-}
 
-function Exemple(){return <h1>Exemple</h1>;}
-function App() {
+export default function App() {
   return ( 
     <div className="App"> 
-      This is the starting code for "Your first component" ungraded lab 
-      <Header /> 
-      <Exemple/>
-      <Promo />
+      <Header />
+      <div className="App-body">
+         <Main username="JohnDoe" num={5} />
+         <SideBar />
+
+      </div>
     </div> 
   ); 
 }
 
-export default App;
