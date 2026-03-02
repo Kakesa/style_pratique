@@ -1,9 +1,8 @@
 import React from 'react';
 function SideBar() {
     const sidebarStyle = {
-        width: '200px',
+        width: 'calc(30% - 10px)',
         backgroundColor: '#f0f0f0',
-        padding: '10px',
         boxSizing: 'border-box',
         marginLeft: '20px',
     };

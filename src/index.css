@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+main {
+  width: calc(70% - 10%);
+  padding: 20px;
+}
+
+.sidebar {
+  width: calc(30% - 10%);
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.App-body {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+}
